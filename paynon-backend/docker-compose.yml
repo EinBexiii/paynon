@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  paynon:
+    build:
+      context: .
+      network: host
+    volumes:
+       - ./paynon-1.0-SNAPSHOT.jar:/usr/app/paynpn/paynon-1.0-SNAPSHOT.jar
+    environment:
+       - POSTGRES_JDBC_URL=
+       - POSTGRES_USERNAME=
+       - POSTGRES_PASSWORD=
+       - APPLICATION_PORT=
+    restart: always
+    network_mode: host
+    tty: true
