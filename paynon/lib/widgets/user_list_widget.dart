@@ -62,7 +62,7 @@ class UserListWidget extends HookConsumerWidget {
               );
             },
             error: (error, _) {
-              return const Text("Erkam ist schwul");
+              return const Text("ERROR");
             },
             loading: () {
               return const Scaffold(
