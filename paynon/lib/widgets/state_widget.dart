@@ -23,7 +23,7 @@ class StateWidget extends HookConsumerWidget {
         return const MainScreen();
       },
       error: (error, _){
-        return const Text("Erkam ist schwul");
+        return const Text("ERROR");
       },
       loading: (){
         return const Scaffold(
