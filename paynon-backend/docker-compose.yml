@@ -8,7 +8,7 @@ services:
     volumes:
        - ./paynon-1.0-SNAPSHOT.jar:/usr/app/paynon/paynon-1.0-SNAPSHOT.jar
     environment:
-       - POSTGRES_JDBC_URL=jdbc:postgresql://127.0.0.1:26257/defaultdb
+       - POSTGRES_JDBC_URL=jdbc:postgresql://10.9.96.4:26257/defaultdb
        - POSTGRES_USERNAME=admin
        #- POSTGRES_PASSWORD=
        - APPLICATION_PORT=7777

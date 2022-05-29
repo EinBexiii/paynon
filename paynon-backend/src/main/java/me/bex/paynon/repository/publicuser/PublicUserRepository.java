@@ -12,6 +12,10 @@ import java.util.Set;
 @Repository
 public interface PublicUserRepository<T, ID> extends JpaRepository<PublicUserEntity, Long> {
 
+    /**
+     * SQL-Query: Get all users from the database
+     * @return {@link Set<PublicUserEntity>}
+     */
     @Query("from PublicUserEntity e ")
     Set<PublicUserEntity> getAllUsers();
 }
